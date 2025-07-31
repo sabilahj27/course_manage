@@ -1,0 +1,32 @@
+{
+  "generationParameters": {
+    "generationDate": "Wed Jul 30 2025 15:12:41 GMT+0700 (Indochina Time)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "Local CAP",
+    "metadataFilename": "",
+    "serviceUrl": "http://localhost:4004/odata/v4/MainService/",
+    "appName": "students",
+    "appTitle": "Students",
+    "appDescription": "An SAP Fiori application.",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.138.1",
+    "enableCodeAssist": false,
+    "enableEslint": false,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.18.3",
+    "template": "List Report Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "Students"
+      },
+      {
+        "type": "Navigation Entity",
+        "value": "Enrollments"
+      }
+    ],
+    "launchText": "To launch the generated app, start your CAP project:  (```mvn spring-boot:run```) and navigate to the following location in your browser:\n\nhttp://localhost:8080/students/webapp/index.html"
+  }
+}
