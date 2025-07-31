@@ -1,5 +1,7 @@
 package com.course.cap.course_manage.handler;
 
+import java.time.OffsetDateTime;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,11 +30,10 @@ public class GiveFeedbackHandler implements EventHandler {
         CourseFeedbacks feedback = CourseFeedbacks.create();
 
         String comments = context.getComments();
-        // enrollment.setComments(comments);
 
         feedback.setComments(comments);
-        feedback.setCourse(feedback.getCourse());
-        feedback.setCreatedAt(null);
+        feedback.setCourseId(enrollment.getCourseIDId());;
+        feedback.setCreatedAt(java.sql.Timestamp.from(java.time.Instant.now()));
 
         CqnInsert insert = Insert.into(CourseFeedbacks_.CDS_NAME).entry(feedback);
         db.run(insert);
